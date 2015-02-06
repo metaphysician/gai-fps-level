@@ -45,8 +45,8 @@ public class CharController : MonoBehaviour {
 	void OnAnimatorMove()
 	{
 		Vector3 velocity = animController.deltaPosition / Time.deltaTime;
-		velocity.y = rigidbody.velocity.y;
+		velocity.y = GetComponent<Rigidbody>().velocity.y;
 
-		rigidbody.velocity = velocity;
+		GetComponent<Rigidbody>().velocity = velocity;
 	}
 }

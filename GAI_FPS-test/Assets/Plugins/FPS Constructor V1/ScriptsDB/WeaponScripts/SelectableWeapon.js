@@ -9,7 +9,7 @@
 
 private var selected : boolean = false;
 var weapon : GameObject;
-@HideInInspector
+//@HideInInspector
 var WeaponInfo : WeaponInfo;
 var isEquipped : boolean = false;
 var ammo : int = 0;

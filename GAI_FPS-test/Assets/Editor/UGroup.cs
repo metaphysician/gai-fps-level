@@ -49,11 +49,11 @@ public class UGroup : EditorWindow
 					if (groupMember.transform.position.y < position.y)
 						position.y = groupMember.transform.position.y;
 					if (groupMember.GetComponent<Collider>())
-					if (groupMember.collider.bounds.min.y < position.y)
-						position.y = groupMember.collider.bounds.min.y;
+					if (groupMember.GetComponent<Collider>().bounds.min.y < position.y)
+						position.y = groupMember.GetComponent<Collider>().bounds.min.y;
 					if (groupMember.GetComponent<Renderer>())	
-					if (groupMember.renderer.bounds.min.y < position.y)
-						position.y = groupMember.renderer.bounds.min.y;
+					if (groupMember.GetComponent<Renderer>().bounds.min.y < position.y)
+						position.y = groupMember.GetComponent<Renderer>().bounds.min.y;
 						
 				}
 				
