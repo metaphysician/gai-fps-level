@@ -1,13 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/importFPS_Constructor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js">
     <Files>
       <File FileName="Assets/Plugins/FPS Constructor V1/Demo Assets/Weapons/Orbital Laser/Laser/OrbitalDesignator.js" Line="3" Column="3" />
       <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Editable/HighlightWeapon.js" Line="45" Column="45" />
       <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/MouseLookDBJS.js" Line="4" Column="4" />
       <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/PickupWeapon.js" Line="11" Column="11" />
       <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js" Line="2" Column="2" />
-      <File FileName="Assets/importFPS_Constructor.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
