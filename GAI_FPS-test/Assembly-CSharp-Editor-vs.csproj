@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_0_2;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,124 +39,113 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AI\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
      <Compile Include="Assets\Editor\MultipleCurvesTransferer.cs" />
      <Compile Include="Assets\Editor\UGroup.cs" />
-     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
-     <None Include="Assets\MeshMaker\Resources\keys.txt" />
-     <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
-     <None Include="Assets\MeshMaker\Resources\formulas.txt" />
-     <None Include="Assets\MeshMaker\Resources\Transparent.shader" />
-     <None Include="Assets\MeshMaker\Documentation\readme.txt" />
+     <None Include="Assets\MiscTools\MeshMaker\Resources\keys.txt" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\AspectSphereShader.shader" />
+     <None Include="Assets\MiscTools\MeshMaker\Resources\formulas.txt" />
+     <None Include="Assets\MiscTools\MeshMaker\Resources\Transparent.shader" />
+     <None Include="Assets\MiscTools\MeshMaker\Documentation\readme.txt" />
      <None Include="Assets\Editor\UGroup_Readme.txt" />
-     <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
-     <None Include="Assets\MeshMaker\Resources\Highlight.shader" />
-     <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
-     <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
-     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
-     <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />
-     <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
-     <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
-     <None Include="Assets\carpets\plaintextures.com.txt" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
+     <None Include="Assets\MiscTools\MeshMaker\Resources\Highlight.shader" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\WaypointShader.shader" />
+     <None Include="Assets\AI\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\AspectRingShader.shader" />
+     <None Include="Assets\AI\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
+     <None Include="Assets\Textures\carpets\plaintextures.com.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript-Editor-firstpass">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="MeshMaker">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/MeshMaker/Editor/MeshMaker.dll</HintPath>
- </Reference>
- <Reference Include="ComputationalGeometry">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/MeshMaker/Editor/Plugins/ComputationalGeometry.dll</HintPath>
- </Reference>
- <Reference Include="NCalc">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/MeshMaker/Editor/Plugins/NCalc.dll</HintPath>
- </Reference>
- <Reference Include="ULIB">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/MeshMaker/Editor/Plugins/ULIB.dll</HintPath>
- </Reference>
- <Reference Include="UlibPlugins">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/MeshMaker/Editor/Plugins/UlibPlugins.dll</HintPath>
- </Reference>
- <Reference Include="VectorGeometry">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/MeshMaker/Editor/Plugins/VectorGeometry.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
  <Reference Include="AetherUnity">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/RAIN/Editor/AetherUnity.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/Editor/AetherUnity.dll</HintPath>
  </Reference>
  <Reference Include="LegionRestModel">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/RAIN/Editor/LegionRestModel.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/Editor/LegionRestModel.dll</HintPath>
  </Reference>
  <Reference Include="RAINEditor">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/Editor/RAINEditor.dll</HintPath>
  </Reference>
  <Reference Include="RAINUpdater">
- <HintPath>C:/Users/Pete/Documents/gai-fps-level/GAI_FPS-test/Assets/RAIN/Editor/RAINUpdater.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/Editor/RAINUpdater.dll</HintPath>
+ </Reference>
+ <Reference Include="MeshMaker">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/MeshMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="ComputationalGeometry">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/ComputationalGeometry.dll</HintPath>
+ </Reference>
+ <Reference Include="NCalc">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/NCalc.dll</HintPath>
+ </Reference>
+ <Reference Include="ULIB">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/ULIB.dll</HintPath>
+ </Reference>
+ <Reference Include="UlibPlugins">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/UlibPlugins.dll</HintPath>
+ </Reference>
+ <Reference Include="VectorGeometry">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/VectorGeometry.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/androidplayer/UnityEditor.Android.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.WP8.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/wp8support/UnityEditor.WP8.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Metro.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/metrosupport/UnityEditor.Metro.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.BB10.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/blackberryplayer/UnityEditor.BB10.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.SamsungTV.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/stvplayer/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/BlackBerryPlayer/UnityEditor.BB10.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/webglsupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
       <Project>{2B5C84B2-7331-EDEA-6583-32913FC0887F}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{3F54294A-0091-4E7D-6C0C-055946A032DA}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass-vs.csproj">
       <Project>{739C37FF-241F-12A5-A342-15F40F8F7D12}</Project>      <Name>Assembly-CSharp-Editor-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
