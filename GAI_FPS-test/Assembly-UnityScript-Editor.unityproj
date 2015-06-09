@@ -47,14 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AI\RAIN\Editor\ScriptTemplates\ActionTemplate_JS.js" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\keys.txt" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\AspectSphereShader.shader" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\formulas.txt" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\Transparent.shader" />
-     <None Include="Assets\MiscTools\MeshMaker\Documentation\readme.txt" />
      <None Include="Assets\Editor\UGroup_Readme.txt" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\Highlight.shader" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\WaypointShader.shader" />
      <None Include="Assets\AI\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
@@ -85,24 +80,6 @@
  </Reference>
  <Reference Include="RAINUpdater">
  <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AI/RAIN/Editor/RAINUpdater.dll</HintPath>
- </Reference>
- <Reference Include="MeshMaker">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/MeshMaker.dll</HintPath>
- </Reference>
- <Reference Include="ComputationalGeometry">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/ComputationalGeometry.dll</HintPath>
- </Reference>
- <Reference Include="NCalc">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/NCalc.dll</HintPath>
- </Reference>
- <Reference Include="ULIB">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/ULIB.dll</HintPath>
- </Reference>
- <Reference Include="UlibPlugins">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/UlibPlugins.dll</HintPath>
- </Reference>
- <Reference Include="VectorGeometry">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/MiscTools/MeshMaker/Editor/Plugins/VectorGeometry.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -137,6 +114,8 @@
       <Project>{2B5C84B2-7331-EDEA-6583-32913FC0887F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{17E2FF1D-0BEC-1687-E083-6B1E0411789B}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{3F54294A-0091-4E7D-6C0C-055946A032DA}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
       <Project>{65E3A318-4FE1-9E40-C0CD-D95E77263B11}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">

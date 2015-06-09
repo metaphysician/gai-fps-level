@@ -197,14 +197,9 @@
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\keys.txt" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\AspectSphereShader.shader" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\formulas.txt" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\Transparent.shader" />
-     <None Include="Assets\MiscTools\MeshMaker\Documentation\readme.txt" />
      <None Include="Assets\Editor\UGroup_Readme.txt" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
-     <None Include="Assets\MiscTools\MeshMaker\Resources\Highlight.shader" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\AI\RAIN\Editor\Shaders\WaypointShader.shader" />
      <None Include="Assets\AI\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
