@@ -1,8 +1,8 @@
 # =============== #
 # Unity generated #
 # =============== #
-Temp/
-Library/
+GAI_FPS-test/Temp/
+GAI_FPS-test/Library/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -11,13 +11,13 @@ ExportedObj/
 obj/
 *.svd
 *.userprefs
-/*.csproj
-*.pidb
-*.suo
-/*.sln
-*.user
-*.unityproj
-*.booproj
+GAI_FPS-test/*.csproj
+GAI_FPS-test/*.pidb
+GAI_FPS-test/*.suo
+GAI_FPS-test/*.sln
+GAI_FPS-test/*.user
+GAI_FPS-test/*.unityproj
+GAI_FPS-test/*.booproj
 
 # ============ #
 # OS generated #
@@ -30,10 +30,4 @@ obj/
 ehthumbs.db
 Thumbs.db
 
-Assets/Scenes/Scott_SceneUpdates/*
 
-Assets/MiniGameConfig.xml
-Assets/MiniGameConfig_dev.xml
-
-Assets/QuestConfig.xml
-Assets/QuestConfig_dev.xml
