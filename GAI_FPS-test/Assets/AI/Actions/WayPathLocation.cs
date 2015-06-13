@@ -38,7 +38,7 @@ public class WayPathLocation : RAINAction
 			                  ai.Kinematic.Position.z + Random.Range(-8f, 8f));
 			
 			//We will create navigation points using the above calculated value, the AI current positon and ensure it is within the bounds of our navigation graph
-			found = NavigationManager.instance.GraphsForPoints(ai.Kinematic.Position, loc, ai.Motor.StepUpHeight, NavigationManager.GraphType.Navmesh, ((BasicNavigator)ai.Navigator).GraphTags);
+			found = NavigationManager.Instance.GraphsForPoints(ai.Kinematic.Position, loc, ai.Motor.StepUpHeight, NavigationManager.GraphType.Navmesh, ((BasicNavigator)ai.Navigator).GraphTags);
 			
 		} while ((Vector3.Distance(ai.Kinematic.Position, loc) < 2f) || (found.Count == 0)); //We want to be sure the location found is far enough away from each one we move to so we don't pick anything to close or the same one
 		
