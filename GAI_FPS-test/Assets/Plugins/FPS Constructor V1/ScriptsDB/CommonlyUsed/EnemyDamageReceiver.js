@@ -9,6 +9,7 @@ var multiplier : float = 1;
 var deadReplacement : Rigidbody;
 @HideInInspector
 var playerObject : GameObject;
+var FPS_AI_scriptObject : GameObject;
 var useHitEffect : boolean = true;
 
 @HideInInspector
@@ -98,6 +99,8 @@ function Detonate(){
 	// Create the deathEffect
 	if (deathEffect)
 		Instantiate (deathEffect, transform.position, transform.rotation);
+		SendMessageUpwards ("Die");
+		Destroy(gameObject);
 
 	// If we have a dead replacement then replace ourselves with it!
 	if (deadReplacement) {
@@ -114,7 +117,5 @@ function Detonate(){
 		emitter.emit = false;
 		emitter.transform.parent = null;
 	}
-	BroadcastMessage ("Die", SendMessageOptions.DontRequireReceiver);
-	Destroy(gameObject);
 
 }

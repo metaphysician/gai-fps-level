@@ -24,7 +24,7 @@ function Start () {
 	
 
 	// Except our action animations, Dont loop those
-	GetComponent.<Animation>()["testBot_shoot"].wrapMode = WrapMode.Once;
+	GetComponent.<Animation>()["testBot_rifle_shoot"].wrapMode = WrapMode.Once;
 	
 	// Put idle and run in a lower layer. They will only animate if our action animations are not playing
 	GetComponent.<Animation>()["testBot_Killed 010"].layer = -1;

@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class ApplicationManager : MonoBehaviour {
-	
+	public GameObject SceneElements;
+	public GameObject GUICamera;
+	public GameObject MainGUIcanvas;
 
 	public void Quit () 
 	{
@@ -11,5 +13,14 @@ public class ApplicationManager : MonoBehaviour {
 		#else
 		Application.Quit();
 		#endif
+	}
+
+
+	public void NewGame ()
+	{
+		Application.LoadLevelAdditive("Graybox-testAI-legacy");
+		SceneElements.SetActive(false);
+		GUICamera.SetActive(false);
+		MainGUIcanvas.SetActive(false);
 	}
 }

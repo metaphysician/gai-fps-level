@@ -1,6 +1,11 @@
 static var canLock : boolean = true;
 static var mobile;
 static var unPaused : boolean = false;
+private var GUIobjects : GameObject;
+private var GUIcamera : GameObject;
+private var GUIcanvas : GameObject;
+private var WeaponCamera : GameObject;
+
 
 function Awake () {
 	#if UNITY_IPHONE
@@ -12,6 +17,11 @@ function Awake () {
 	#endif
 }
 function Start(){
+		//UIobjects = GameObject.Find("SF Scene Elements");
+		//GUIcanvas = GameObject.Find("Canvas");
+		//GUIcamera = GameObject.Find("GUI Camera");
+		//WeaponCamera = GameObject.Find("Player/WeaponCamera");
+		//Debug.Log("The GUI object is " +(GUIobjects.name));
 	if(!mobile){
 		SetPause(true);
 		canLock = true;
@@ -20,6 +30,7 @@ function Start(){
 		SetPause(false);
 		canLock=false;
 		PlayerWeapons.playerActive = true;
+	
 	}
 
 }
@@ -74,6 +85,11 @@ function Update(){
 		SetPause(false);
 	}
 		
+//	if (InputDB.GetButton("Escape") && (PlayerWeapons.playerActive)){
+//		ActivateGUI();
+//		SetPause(true);
+//	}
+
 	if (InputDB.GetButton("Escape")){
 		SetPause(true);
 	}
@@ -96,3 +112,15 @@ function Update(){
 function LateUpdate (){
 	unPaused = false;
 }
+
+//Adding in function to activate GUI - we'll see..
+
+function ActivateGUI()
+{
+	GUIobjects.SetActive(true);
+	GUIcanvas.SetActive(true);
+	GUIcamera.SetActive(true);
+	WeaponCamera.SetActive(false);
+
+}
+

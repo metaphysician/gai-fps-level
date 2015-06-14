@@ -133,6 +133,16 @@ function AttackPlayer () {
 	}
 }
 
+//grafted on function to link up FPS constructor and older FPS AI
+function Die() 
+{
+	//call the Death animation and kill the script
+	GetComponent.<Animation>().CrossFade("testBot_Killed 01");
+	Destroy(this);
+}
+
+
+
 function SearchPlayer (position : Vector3) {
 	// Run towards the player but after 3 seconds timeout and go back to Patroling
 	var timeout = 3.0;
