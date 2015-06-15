@@ -646,6 +646,7 @@ function Fire2(){
 
 function Fire(){
 	idleTime = 0;
+	//Debug.Log("LockCursor Unpaused is:" + (LockCursor.unPaused));
 	if (!gunActive || aim1.sprinting || inDelay || LockCursor.unPaused){
 		if(gunTypes.spray && sprayOn){
 			if(GetComponent.<AudioSource>()){
@@ -835,6 +836,7 @@ function FireShot(){
 		inDelay = false;
 		for (var i=0; i<shotCount; i++) {
 			FireOneBullet();
+			Debug.Log("Fire One Bullet Called!");
 			Kickback();
 		}
 	} else if (gunType == gunTypes.launcher){
@@ -911,6 +913,7 @@ function FireOneBullet(){
         var hit : RaycastHit = hits[i];
         var BP : BulletPenetration = hit.transform.GetComponent(BulletPenetration);
         if(penetrate){
+			Debug.Log("RaycastHit-Penetrated!!");
        		if(BP == null){
         		penetrate = false;
        		} else {

@@ -139,8 +139,10 @@ function Update(){
 	// Did the user press fire?
 	if (InputDB.GetButton ("Fire1") && (autoFire || charge) && canFire){
 		transform.root.BroadcastMessage("Fire", SendMessageOptions.DontRequireReceiver);
+		Debug.Log("Gun Fired!");
 	} else if(InputDB.GetButtonDown ("Fire1") && canFire){
 		transform.root.BroadcastMessage("Fire", SendMessageOptions.DontRequireReceiver);
+		Debug.Log("Gun Fired!");
 	} 	
 	if (InputDB.GetButton ("Fire2") && canFire && (autoFire || charge)){
 		BroadcastMessage("Fire2", SendMessageOptions.DontRequireReceiver);
