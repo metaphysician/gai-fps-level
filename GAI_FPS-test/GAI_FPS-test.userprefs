@@ -1,12 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js">
     <Files>
-      <File FileName="Assets/Plugins/FPS Constructor V1/Demo Assets/Weapons/Orbital Laser/Laser/OrbitalDesignator.js" Line="3" Column="3" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Editable/HighlightWeapon.js" Line="45" Column="45" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/MouseLookDBJS.js" Line="4" Column="4" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/PickupWeapon.js" Line="11" Column="11" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js" Line="2" Column="2" />
+      <File FileName="Assets/AI/TempAI from old FPS/Scripts/AI.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/Key.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/InputItem.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/InputDB.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/DB Upgrades_Store/Store/Scripts/DBStoreController.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/DB Upgrades_Store/Store/Scripts/DBStoreGUI.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/PlayerWeapons.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/FPSInputControllerDB.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/CharacterMotorDB.js" Line="1" Column="1" />
+      <File FileName="Assets/AI/TempAI from old FPS/Scripts/AutoWayPoint.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ApplicationManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js" Line="5" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

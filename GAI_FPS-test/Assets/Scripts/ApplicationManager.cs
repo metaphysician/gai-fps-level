@@ -2,9 +2,13 @@
 using System.Collections;
 
 public class ApplicationManager : MonoBehaviour {
-	public GameObject SceneElements;
-	public GameObject GUICamera;
-	public GameObject MainGUIcanvas;
+	public GameObject GUImaster;
+	public GameObject ScreenLock;
+
+	void Start()
+	{
+		
+	}
 
 	public void Quit () 
 	{
@@ -19,8 +23,20 @@ public class ApplicationManager : MonoBehaviour {
 	public void NewGame ()
 	{
 		Application.LoadLevelAdditive("Graybox-testAI-legacy");
-		SceneElements.SetActive(false);
-		GUICamera.SetActive(false);
-		MainGUIcanvas.SetActive(false);
+		StartCoroutine("delayedUI_sceneLoad");
+	}
+
+	public void Continue()
+	{
+		ScreenLock=GameObject.Find("Manager/StoreController");
+		Debug.Log("Continue Btn Pressed!");
+		ScreenLock.SendMessage("ContinueBtn");
+		
+	}
+
+	IEnumerator delayedUI_sceneLoad()
+	{
+		yield return new WaitForSeconds(1);
+			GUImaster.SetActive(false);
 	}
 }

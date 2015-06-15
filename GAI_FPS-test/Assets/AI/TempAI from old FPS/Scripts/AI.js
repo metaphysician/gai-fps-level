@@ -12,7 +12,7 @@ static var tNumber : int=0;
 var taunts : AudioClip[];
 var pause : int;
 var musicTarget : GameObject;
-
+var deadReplacement : Transform;
 var robotAudioSource : AudioSource;
 var lastTime : float;
 var currpitch : float=1.0;
@@ -133,12 +133,21 @@ function AttackPlayer () {
 	}
 }
 
-//grafted on function to link up FPS constructor and older FPS AI
+//grafted on function to link up FPS constructor and older FPS AI -kludgy
 function Die() 
 {
 	//call the Death animation and kill the script
-	GetComponent.<Animation>().CrossFade("testBot_Killed 01");
-	Destroy(this);
+	GetComponent.<Animation>().CrossFade("testBot_Killed 01"); 
+
+
+	// Replace ourselves with the dead body
+	if (deadReplacement) {
+		var dead : Transform = Instantiate(deadReplacement, transform.position, transform.rotation);
+		
+		// Copy position & rotation from the old hierarchy into the dead replacement
+		CopyTransformsRecurse(transform, dead);
+	}
+	Destroy(gameObject);
 }
 
 
@@ -251,7 +260,14 @@ var pitchfloat : float = pitchpercent * .01;
 return (Random.Range((currpitch - pitchfloat ), (currpitch + pitchfloat)) ); 
 }
 
-
-
-
+static function CopyTransformsRecurse (src : Transform,  dst : Transform) {
+	dst.position = src.position;
+	dst.rotation = src.rotation;
 	
+	for (var child : Transform in dst) {
+		// Match the transform with the same name
+		var curSrc = src.Find(child.name);
+		if (curSrc)
+			CopyTransformsRecurse(curSrc, child);
+	}
+}	

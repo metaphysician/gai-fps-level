@@ -1,10 +1,11 @@
 static var canLock : boolean = true;
 static var mobile;
 static var unPaused : boolean = false;
-private var GUIobjects : GameObject;
-private var GUIcamera : GameObject;
-private var GUIcanvas : GameObject;
+private var GUImaster : GameObject;
 private var WeaponCamera : GameObject;
+private var MenuManager : GameObject;
+public var MainMenuAnimCtrl : Animator;
+public var AIpauseObject : GameObject;
 
 
 function Awake () {
@@ -17,11 +18,10 @@ function Awake () {
 	#endif
 }
 function Start(){
-		//UIobjects = GameObject.Find("SF Scene Elements");
-		//GUIcanvas = GameObject.Find("Canvas");
-		//GUIcamera = GameObject.Find("GUI Camera");
-		//WeaponCamera = GameObject.Find("Player/WeaponCamera");
-		//Debug.Log("The GUI object is " +(GUIobjects.name));
+		GUImaster = GameObject.Find("GUI_Master");
+		WeaponCamera = GameObject.Find("Player/Weapon Camera");
+		MenuAnimator = GameObject.Find("GUI_Master/Canvas/MenuManager");
+
 	if(!mobile){
 		SetPause(true);
 		canLock = true;
@@ -51,7 +51,7 @@ static function SetPause(pause : boolean){
 	{
 		PlayerWeapons.playerActive = false;
 		//Screen.lockCursor = false;
-		Time.timeScale = 0;
+		//Time.timeScale = 0.01;
 		player.BroadcastMessage("Freeze", SendMessageOptions.DontRequireReceiver);
 
 	}
@@ -85,14 +85,14 @@ function Update(){
 		SetPause(false);
 	}
 		
-//	if (InputDB.GetButton("Escape") && (PlayerWeapons.playerActive)){
-//		ActivateGUI();
-//		SetPause(true);
-//	}
-
-	if (InputDB.GetButton("Escape")){
+	if (InputDB.GetButton("Escape") && (PlayerWeapons.playerActive)){
+		ActivateGUI();
 		SetPause(true);
 	}
+
+//	if (InputDB.GetButton("Escape")){
+//		SetPause(true);
+//	}
 
     // Did we lose cursor locking?
     // eg. because the user pressed escape
@@ -117,10 +117,21 @@ function LateUpdate (){
 
 function ActivateGUI()
 {
-	GUIobjects.SetActive(true);
-	GUIcanvas.SetActive(true);
-	GUIcamera.SetActive(true);
+	Screen.lockCursor=false;
+	AIpauseObject.SetActive(false);
+	GUImaster.SetActive(true);
 	WeaponCamera.SetActive(false);
+	MainMenuAnimCtrl.SetBool("Open",true);
+}
 
+function ContinueBtn()
+{
+	Screen.lockCursor=true;
+	AIpauseObject.SetActive(true);
+	AIpauseObject.SendMessage("Patrol");
+	GUImaster.SetActive(false);
+	WeaponCamera.SetActive(true);
+	MainMenuAnimCtrl.SetBool("Open",false);
+	SetPause(false);
 }
 
