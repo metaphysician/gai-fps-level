@@ -1,19 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AI/TempAI from old FPS/Scripts/AI.js">
     <Files>
-      <File FileName="Assets/AI/TempAI from old FPS/Scripts/AI.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/Key.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/InputItem.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/InputDB.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/DB Upgrades_Store/Store/Scripts/DBStoreController.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/DB Upgrades_Store/Store/Scripts/DBStoreGUI.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/PlayerWeapons.js" Line="1" Column="1" />
+      <File FileName="Assets/AI/TempAI from old FPS/Scripts/AI.js" Line="22" Column="22" />
       <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/FPSInputControllerDB.js" Line="1" Column="1" />
       <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/CharacterMotorDB.js" Line="1" Column="1" />
       <File FileName="Assets/AI/TempAI from old FPS/Scripts/AutoWayPoint.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ApplicationManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js" Line="5" Column="5" />
+      <File FileName="Assets/Scripts/ApplicationManager.cs" Line="57" Column="57" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js" Line="2" Column="2" />
+      <File FileName="Assets/Scripts/PanelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/GunLook.js" Line="11" Column="11" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/CommonlyUsed/EnemyDamageReceiver.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/Demo Assets/Enemy/General Scripts/EnemyShoot.js" Line="1" Column="1" />
+      <File FileName="Assets/AI/TempAI from old FPS/Scripts/CharacterDamage.js" Line="2" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
