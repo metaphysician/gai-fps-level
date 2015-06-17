@@ -118,20 +118,30 @@ function LateUpdate (){
 function ActivateGUI()
 {
 	Screen.lockCursor=false;
-	AIpauseObject.SetActive(false);
 	GUImaster.SetActive(true);
 	WeaponCamera.SetActive(false);
 	MainMenuAnimCtrl.SetBool("Open",true);
+	if(AIpauseObject == null){
+		Debug.Log("Nothing To See Here!");		
+	} else { 
+		AIpauseObject.SetActive(false);
+		}
 }
 
 function ContinueBtn()
 {
 	Screen.lockCursor=true;
-	AIpauseObject.SetActive(true);
-	AIpauseObject.SendMessage("Patrol");
 	GUImaster.SetActive(false);
 	WeaponCamera.SetActive(true);
 	MainMenuAnimCtrl.SetBool("Open",false);
 	SetPause(false);
+	//temp code to check if robot is in level - need revision
+	if(AIpauseObject == null){
+		Debug.Log("Nothing To See Here!");	
+	} else { 
+		AIpauseObject.SetActive(true);
+		AIpauseObject.SendMessage("Patrol");
+
+	}
 }
 
