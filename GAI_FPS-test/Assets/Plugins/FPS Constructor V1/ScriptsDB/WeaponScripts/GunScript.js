@@ -403,6 +403,7 @@ function Crouching () {
 		spreadRate = standardSpreadRate*crouchSpreadModifier;
 		shotSpread = Mathf.Max(standardSpread*crouchSpreadModifier, shotSpread);
 	}
+	//send a message to all bots to adjust DontComeCloser. probably need something to detect non crouching and readjust value
 	
 }
 
