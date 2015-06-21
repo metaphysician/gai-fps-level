@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Animations\CombatAnimation-adapted\MovementAdaptor.cs" />
+     <Compile Include="Assets\DoubleDoor.cs" />
      <Compile Include="Assets\MiscTools\Camera\OrbitingCamera.cs" />
      <Compile Include="Assets\Pathfinding\Scenes\Scripts\AI.cs" />
      <Compile Include="Assets\Pathfinding\Scenes\Scripts\GridPlayer.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Pathfinding\Scripts\WaypointListNode.cs" />
      <Compile Include="Assets\Pathfinding\Scripts\WaypointNode.cs" />
      <Compile Include="Assets\Pathfinding\Scripts\WaypointPathfinder.cs" />
+     <Compile Include="Assets\QuadDoor.cs" />
      <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Scripts\ChangeColor.cs" />

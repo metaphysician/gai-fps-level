@@ -22,7 +22,7 @@ public class SingleDoor : MonoBehaviour {
 	}
 	
 	private IEnumerator Open(){
-		while (Door.transform.localPosition.z > -Size) {
+		while (Door.transform.localPosition.z > baseZ - Size) {
 			Door.transform.Translate(new Vector3(0f,0f,-Speed*Time.deltaTime));
 			yield return null;
 		}
