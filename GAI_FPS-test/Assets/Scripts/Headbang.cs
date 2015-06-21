@@ -10,6 +10,7 @@ public class Headbang : MonoBehaviour {
 	private double twoPi;
 	private double w1;
 	private double w2;
+	public float Yrot;
 
 	void Start () {
 		twoPi = 2 * Math.PI;
@@ -24,7 +25,7 @@ public class Headbang : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gameObject.transform.rotation = Quaternion.Euler((float)((1-AsyncCos (phase))*(-1)*bangDist), 40f, 0f);
+		gameObject.transform.rotation = Quaternion.Euler((float)((1-AsyncCos (phase))*bangDist), Yrot, 0f);
 		phase += BPM/60*twoPi*Time.deltaTime;
 		if (phase >= twoPi) {
 			phase -= twoPi;
