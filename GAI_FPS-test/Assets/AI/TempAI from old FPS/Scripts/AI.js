@@ -17,7 +17,8 @@ var robotAudioSource : AudioSource;
 var lastTime : float;
 var currpitch : float=1.0;
 var pitchpercent : int=0;
-var playerWeapons : PlayerWeapons = GetComponent(PlayerWeapons);
+var tranquilizer : boolean=true;
+
 
 private var lastShot = -10.0;
 
@@ -137,29 +138,33 @@ function AttackPlayer () {
 function Die() 
 {
 	// If Player is Using a Lethal weapon we call this branch
-	if (playerWeapons.selectedWeapon > 0) {
+	if (!tranquilizer) {
 		//call the Death animation and kill the script
 		GetComponent.<Animation>().CrossFade("testBot_Killed 01"); 
-		// Replace ourselves with the dead body
-		if (deadReplacement) {
-			var dead : Transform = Instantiate(deadReplacement, transform.position, transform.rotation);
-		
-			// Copy position & rotation from the old hierarchy into the dead replacement
-			CopyTransformsRecurse(transform, dead);
-			
-			// Enter code for Rally Points here. Death should alert other guards to rally at this point after a brief delay
-		}
-		Destroy(gameObject);
+		// Replace ourselves with the dead body			
+		// Enter code for Rally Points here. Death should alert other guards to rally at this point after a brief delay
 		Debug.Log("Guard has been killed with lethal weapon");
-	}
+		}
+		
 	// If player is using Tranq we call this branch
-	else if (playerWeapons.selectedWeapon == 0) {
+	else if (tranquilizer) {
 		// Call death animation
 		GetComponent.<Animation>().CrossFade("testBot_Killed 01"); 
 		// Yield for a time and play a standing animation. Then resume patrols
 		Debug.Log("Guard has been stunned");
-	}
+		}
+
+	// in either case the dead replacement has to be called here and we have to destroy the testBot or it will keep attacking	
+	if (deadReplacement) 
+		{
+			Debug.Log("Has this been called?");
+			var dead : Transform = Instantiate(deadReplacement, transform.position, transform.rotation);
+			// Copy position & rotation from the old hierarchy into the dead replacement
+			CopyTransformsRecurse(transform, dead);
+			Destroy(gameObject);
+		}
 }
+
 
 
 
