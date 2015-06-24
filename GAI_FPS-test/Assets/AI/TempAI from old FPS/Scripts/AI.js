@@ -17,7 +17,7 @@ var robotAudioSource : AudioSource;
 var lastTime : float;
 var currpitch : float=1.0;
 var pitchpercent : int=0;
-
+var playerWeapons : PlayerWeapons = GetComponent(PlayerWeapons);
 
 private var lastShot = -10.0;
 
@@ -136,18 +136,29 @@ function AttackPlayer () {
 //grafted on function to link up FPS constructor and older FPS AI -kludgy
 function Die() 
 {
-	//call the Death animation and kill the script
-	GetComponent.<Animation>().CrossFade("testBot_Killed 01"); 
-
-
-	// Replace ourselves with the dead body
-	if (deadReplacement) {
-		var dead : Transform = Instantiate(deadReplacement, transform.position, transform.rotation);
+	// If Player is Using a Lethal weapon we call this branch
+	if (playerWeapons.selectedWeapon > 0) {
+		//call the Death animation and kill the script
+		GetComponent.<Animation>().CrossFade("testBot_Killed 01"); 
+		// Replace ourselves with the dead body
+		if (deadReplacement) {
+			var dead : Transform = Instantiate(deadReplacement, transform.position, transform.rotation);
 		
-		// Copy position & rotation from the old hierarchy into the dead replacement
-		CopyTransformsRecurse(transform, dead);
+			// Copy position & rotation from the old hierarchy into the dead replacement
+			CopyTransformsRecurse(transform, dead);
+			
+			// Enter code for Rally Points here. Death should alert other guards to rally at this point after a brief delay
+		}
+		Destroy(gameObject);
+		Debug.Log("Guard has been killed with lethal weapon");
 	}
-	Destroy(gameObject);
+	// If player is using Tranq we call this branch
+	else if (playerWeapons.selectedWeapon == 0) {
+		// Call death animation
+		GetComponent.<Animation>().CrossFade("testBot_Killed 01"); 
+		// Yield for a time and play a standing animation. Then resume patrols
+		Debug.Log("Guard has been stunned");
+	}
 }
 
 
