@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 1c50fc28e71a94ffd8e4999945089b58
+timeCreated: 1435115010
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: flat_wakway
+    100002: polySurface1
+    100004: polySurface1 1
+    100006: polySurface167
+    100008: polySurface168
+    100010: polySurface169
+    100012: polySurface170
+    100014: polySurface171
+    100016: polySurface185
+    100018: polySurface186
+    100020: polySurface187
+    100022: polySurface188
+    100024: polySurface189
+    100026: polySurface198
+    100028: polySurface199
+    100030: polySurface2
+    100032: polySurface28
+    100034: polySurface29
+    100036: polySurface3
+    100038: pPlane1
+    100040: //RootNode
+    100042: tall_railing:left_rai
+    100044: tall_railing:polySurface1
+    100046: tall_railing:polySurface1 1
+    100048: tall_railing:polySurface11
+    100050: tall_railing:polySurface12
+    100052: tall_railing:polySurface13
+    100054: tall_railing:polySurface14
+    100056: tall_railing:polySurface15
+    100058: tall_railing:polySurface16
+    100060: tall_railing:polySurface17
+    100062: tall_railing:polySurface18
+    100064: tall_railing:polySurface2
+    100066: tall_railing:polySurface3
+    100068: tall_railing:polySurface4
+    100070: tall_railing:polySurface5
+    100072: tall_railing:polySurface6
+    100074: tall_railing:polySurface7
+    100076: tall_railing:polySurface8
+    100078: tall_railing:polySurface9
+    100080: tall_railing:transform1
+    100082: tall_railing:transform10
+    100084: tall_railing:transform11
+    100086: tall_railing:transform12
+    100088: tall_railing:transform13
+    100090: tall_railing:transform14
+    100092: tall_railing:transform15
+    100094: tall_railing:transform16
+    100096: tall_railing:transform17
+    100098: tall_railing:transform18
+    100100: tall_railing:transform2
+    100102: tall_railing:transform3
+    100104: tall_railing:transform4
+    100106: tall_railing:transform5
+    100108: tall_railing:transform6
+    100110: tall_railing:transform7
+    100112: tall_railing:transform8
+    100114: tall_railing:transform9
+    400000: flat_wakway
+    400002: polySurface1
+    400004: polySurface1 1
+    400006: polySurface167
+    400008: polySurface168
+    400010: polySurface169
+    400012: polySurface170
+    400014: polySurface171
+    400016: polySurface185
+    400018: polySurface186
+    400020: polySurface187
+    400022: polySurface188
+    400024: polySurface189
+    400026: polySurface198
+    400028: polySurface199
+    400030: polySurface2
+    400032: polySurface28
+    400034: polySurface29
+    400036: polySurface3
+    400038: pPlane1
+    400040: //RootNode
+    400042: tall_railing:left_rai
+    400044: tall_railing:polySurface1
+    400046: tall_railing:polySurface1 1
+    400048: tall_railing:polySurface11
+    400050: tall_railing:polySurface12
+    400052: tall_railing:polySurface13
+    400054: tall_railing:polySurface14
+    400056: tall_railing:polySurface15
+    400058: tall_railing:polySurface16
+    400060: tall_railing:polySurface17
+    400062: tall_railing:polySurface18
+    400064: tall_railing:polySurface2
+    400066: tall_railing:polySurface3
+    400068: tall_railing:polySurface4
+    400070: tall_railing:polySurface5
+    400072: tall_railing:polySurface6
+    400074: tall_railing:polySurface7
+    400076: tall_railing:polySurface8
+    400078: tall_railing:polySurface9
+    400080: tall_railing:transform1
+    400082: tall_railing:transform10
+    400084: tall_railing:transform11
+    400086: tall_railing:transform12
+    400088: tall_railing:transform13
+    400090: tall_railing:transform14
+    400092: tall_railing:transform15
+    400094: tall_railing:transform16
+    400096: tall_railing:transform17
+    400098: tall_railing:transform18
+    400100: tall_railing:transform2
+    400102: tall_railing:transform3
+    400104: tall_railing:transform4
+    400106: tall_railing:transform5
+    400108: tall_railing:transform6
+    400110: tall_railing:transform7
+    400112: tall_railing:transform8
+    400114: tall_railing:transform9
+    2300000: flat_wakway
+    2300002: polySurface1
+    2300004: polySurface1 1
+    2300006: polySurface167
+    2300008: polySurface168
+    2300010: polySurface169
+    2300012: polySurface170
+    2300014: polySurface171
+    2300016: polySurface185
+    2300018: polySurface186
+    2300020: polySurface187
+    2300022: polySurface188
+    2300024: polySurface189
+    2300026: polySurface198
+    2300028: polySurface199
+    2300030: polySurface2
+    2300032: polySurface28
+    2300034: polySurface29
+    2300036: polySurface3
+    2300038: pPlane1
+    2300040: tall_railing:polySurface1
+    3300000: flat_wakway
+    3300002: polySurface1
+    3300004: polySurface1 1
+    3300006: polySurface167
+    3300008: polySurface168
+    3300010: polySurface169
+    3300012: polySurface170
+    3300014: polySurface171
+    3300016: polySurface185
+    3300018: polySurface186
+    3300020: polySurface187
+    3300022: polySurface188
+    3300024: polySurface189
+    3300026: polySurface198
+    3300028: polySurface199
+    3300030: polySurface2
+    3300032: polySurface28
+    3300034: polySurface29
+    3300036: polySurface3
+    3300038: pPlane1
+    3300040: tall_railing:polySurface1
+    4300000: polySurface198
+    4300002: polySurface185
+    4300004: polySurface186
+    4300006: polySurface187
+    4300008: polySurface188
+    4300010: polySurface189
+    4300012: polySurface171
+    4300014: polySurface170
+    4300016: polySurface169
+    4300018: polySurface168
+    4300020: polySurface167
+    4300022: polySurface199
+    4300024: polySurface1
+    4300026: polySurface2
+    4300028: polySurface3
+    4300030: polySurface28
+    4300032: polySurface29
+    4300034: flat_wakway
+    4300036: tall_railing:polySurface1
+    4300038: polySurface1
+    4300040: pPlane1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

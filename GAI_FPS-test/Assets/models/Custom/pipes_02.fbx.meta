@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: d9422942fb4b34c89a71707ae2c81791
+timeCreated: 1435115012
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: group1
+    100002: group1 1
+    100004: group2
+    100006: group2 1
+    100008: //RootNode
+    100010: pipes_singleset:group2
+    100012: pipes_singleset:pod:group1
+    100014: pipes_singleset:polySurface159
+    100016: pipes_singleset:polySurface165
+    100018: pipes_singleset:polySurface166
+    100020: pipes_singleset:polySurface167
+    100022: pipes_singleset:polySurface168
+    100024: pipes_singleset:polySurface169
+    100026: polySurface159
+    100028: polySurface165
+    100030: polySurface166
+    100032: polySurface167
+    100034: polySurface168
+    100036: polySurface169
+    400000: group1
+    400002: group1 1
+    400004: group2
+    400006: group2 1
+    400008: //RootNode
+    400010: pipes_singleset:group2
+    400012: pipes_singleset:pod:group1
+    400014: pipes_singleset:polySurface159
+    400016: pipes_singleset:polySurface165
+    400018: pipes_singleset:polySurface166
+    400020: pipes_singleset:polySurface167
+    400022: pipes_singleset:polySurface168
+    400024: pipes_singleset:polySurface169
+    400026: polySurface159
+    400028: polySurface165
+    400030: polySurface166
+    400032: polySurface167
+    400034: polySurface168
+    400036: polySurface169
+    2300000: pipes_singleset:polySurface159
+    2300002: pipes_singleset:polySurface165
+    2300004: pipes_singleset:polySurface166
+    2300006: pipes_singleset:polySurface167
+    2300008: pipes_singleset:polySurface168
+    2300010: pipes_singleset:polySurface169
+    2300012: polySurface159
+    2300014: polySurface165
+    2300016: polySurface166
+    2300018: polySurface167
+    2300020: polySurface168
+    2300022: polySurface169
+    3300000: pipes_singleset:polySurface159
+    3300002: pipes_singleset:polySurface165
+    3300004: pipes_singleset:polySurface166
+    3300006: pipes_singleset:polySurface167
+    3300008: pipes_singleset:polySurface168
+    3300010: pipes_singleset:polySurface169
+    3300012: polySurface159
+    3300014: polySurface165
+    3300016: polySurface166
+    3300018: polySurface167
+    3300020: polySurface168
+    3300022: polySurface169
+    4300000: pipes_singleset:polySurface165
+    4300002: pipes_singleset:polySurface166
+    4300004: pipes_singleset:polySurface167
+    4300006: pipes_singleset:polySurface168
+    4300008: pipes_singleset:polySurface169
+    4300010: pipes_singleset:polySurface159
+    4300012: polySurface165
+    4300014: polySurface166
+    4300016: polySurface167
+    4300018: polySurface168
+    4300020: polySurface169
+    4300022: polySurface159
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
