@@ -4,7 +4,8 @@ static var unPaused : boolean = false;
 private var GUImaster : GameObject;
 private var WeaponCamera : GameObject;
 private var MenuManager : GameObject;
-public var MainMenuAnimCtrl : Animator;
+private var ScrollTextControl : GameObject;
+public var MainMenuAnim : Animator;
 public var AIpauseObject : GameObject;
 
 
@@ -20,7 +21,10 @@ function Awake () {
 function Start(){
 		GUImaster = GameObject.Find("GUI_Master");
 		WeaponCamera = GameObject.Find("Player/Weapon Camera");
-		MenuAnimator = GameObject.Find("GUI_Master/Canvas/MenuManager");
+		MenuManager = GameObject.Find("GUI_Master/Canvas/MainMenu");
+		ScrollTextControl = GameObject.Find("GUI_Master/Canvas/ScrollTextControl");
+		MainMenuAnim = MenuManager.GetComponent.<Animator>();
+		
 
 	if(!mobile){
 		SetPause(true);
@@ -120,7 +124,9 @@ function ActivateGUI()
 	Screen.lockCursor=false;
 	GUImaster.SetActive(true);
 	WeaponCamera.SetActive(false);
-	MainMenuAnimCtrl.SetBool("Open",true);
+	MainMenuAnim.SetBool("Open",true);
+
+
 	if(AIpauseObject == null){
 		Debug.Log("Nothing To See Here!");		
 	} else { 
@@ -133,7 +139,7 @@ function ContinueBtn()
 	Screen.lockCursor=true;
 	GUImaster.SetActive(false);
 	WeaponCamera.SetActive(true);
-	MainMenuAnimCtrl.SetBool("Open",false);
+	MainMenuAnim.SetBool("Open",false);
 	SetPause(false);
 	//temp code to check if robot is in level - need revision
 	if(AIpauseObject == null){
