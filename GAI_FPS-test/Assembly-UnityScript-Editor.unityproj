@@ -49,36 +49,35 @@
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_JS.js" />
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_JS.js" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
-     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
-     <None Include="Assets\Editor\UGroup_Readme.txt" />
-     <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
-     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
      <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
-     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
-     <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
-     <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
      <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
-     <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
-     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
      <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
-     <None Include="Assets\AstarPathfindingProject\Readme.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />
      <None Include="Assets\RAIN\ReleaseNotes.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
-     <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\License.txt" />
-     <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
      <None Include="Assets\Textures\carpets\plaintextures.com.txt" />
-     <None Include="Assets\AstarPathfindingProject\link.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="RAIN">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/RAIN.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaform">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/RAINMetaform.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINEditor">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaformEditor">
+ <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -103,24 +102,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="RAINMetaformEditor">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
- </Reference>
- <Reference Include="RAINMetaform">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/RAINMetaform.dll</HintPath>
- </Reference>
- <Reference Include="Pathfinding.JsonFx">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
- </Reference>
- <Reference Include="RAIN">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/RAIN.dll</HintPath>
- </Reference>
- <Reference Include="RAINEditor">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
- </Reference>
- <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/Volumes/Nargothrond/GAI_GameLevelsDev/gai-FPS-level/GAI_FPS-test/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Volumes/Nargothrond/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
