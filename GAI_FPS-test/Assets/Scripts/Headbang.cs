@@ -22,6 +22,10 @@ public class Headbang : MonoBehaviour {
 		w1 = Math.PI + (Math.PI * whiplash);
 		w2 = Math.PI - (Math.PI * whiplash);
 	}
+
+	public void bangDistCtrl(float bang_distance){
+		bangDist = System.Convert.ToDouble(bang_distance);
+	}
 	
 	// Update is called once per frame
 	void Update () {
