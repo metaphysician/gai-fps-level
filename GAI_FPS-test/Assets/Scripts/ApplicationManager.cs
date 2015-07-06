@@ -132,7 +132,7 @@ public class ApplicationManager : MonoBehaviour {
 		}
 			else{ headbangStop = false;}
 			
-		}
+		
 				
 
 	}
