@@ -13,33 +13,34 @@ var sound3 : AudioClip;
 var sound4 : AudioClip;
 var sound5 : AudioClip;
 var sound6 : AudioClip;
+var reloadSource : AudioSource;
 
 function play1(){
-	GetComponent.<AudioSource>().clip = sound1;
-	GetComponent.<AudioSource>().Play();
+	reloadSource.clip = sound1;
+	reloadSource.Play();
 }
 
 function play2(){
-	GetComponent.<AudioSource>().clip = sound2;
-	GetComponent.<AudioSource>().Play();
+	reloadSource.clip = sound2;
+	reloadSource.Play();
 }
 
 function play3(){
-	GetComponent.<AudioSource>().clip = sound3;
-	GetComponent.<AudioSource>().Play();
+	reloadSource.clip = sound3;
+	reloadSource.Play();
 }
 
 function play4(){
-	GetComponent.<AudioSource>().clip = sound4;
-	GetComponent.<AudioSource>().Play();
+	reloadSource.clip = sound4;
+	reloadSource.Play();
 }
 
 function play5(){
-	GetComponent.<AudioSource>().clip = sound5;
-	GetComponent.<AudioSource>().Play();
+	reloadSource.clip = sound5;
+	reloadSource.Play();
 }
 
 function play6(){
-	GetComponent.<AudioSource>().clip = sound6;
-	GetComponent.<AudioSource>().Play();
+	reloadSource.clip = sound6;
+	reloadSource.Play();
 }
