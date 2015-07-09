@@ -23,6 +23,11 @@ public class ApplicationManager : MonoBehaviour {
 	int count=0;
 	public bool startfade = false;
 	public bool headbangStop = false;
+	public bool camMoveToFPS = false;
+	float fadeBang = 10.0f;
+	public Transform mainCam;
+	Vector3 currCamPos;
+	public Transform endCam;
 
 
 	void Start()
@@ -125,15 +130,20 @@ public class ApplicationManager : MonoBehaviour {
 		
 		if(headbangStop)
 		{
-			float reference = -560.0f;
-			float fading = Mathf.SmoothDamp(10.0f, 0.0f, ref reference, fadeTime);
-			headBangObject.SendMessage("bangDistCtrl", fading);
-			Debug.Log ("HeadBang is now:" + (fading));
+			float reference = -2.0f;
+			fadeBang = Mathf.SmoothDamp(fadeBang, 0.0f, ref reference, fadeTime);
+			headBangObject.SendMessage("bangDistCtrl", fadeBang);
+			Debug.Log ("HeadBang is now:" + (fadeBang));
 		}
 			else{ headbangStop = false;}
-			
-		
-				
+
+		if(camMoveToFPS)
+		{
+			float speed = 70.0f;
+			float step = speed * Time.deltaTime;
+			mainCam.position = Vector3.MoveTowards(mainCam.position, endCam.position, step);
+			Debug.Log ("MainCam is now at:" + (currCamPos));
+		}
 
 	}
 
@@ -149,5 +159,10 @@ public class ApplicationManager : MonoBehaviour {
 		headbangStop =true;
 		yield return new WaitForSeconds(5);
 		animCtrl.Play("standup");
+		yield return new WaitForSeconds(3);
+		camMoveToFPS=true;;
 	}
+
+
+
 }
