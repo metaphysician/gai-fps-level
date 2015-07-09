@@ -6,6 +6,7 @@ private var WeaponCamera : GameObject;
 private var MenuManager : GameObject;
 private var ScrollTextControl : GameObject;
 public var MainMenuAnim : Animator;
+public var BackgroundImage : GameObject;
 public var AIpauseObject : GameObject;
 
 
@@ -23,6 +24,7 @@ function Start(){
 		WeaponCamera = GameObject.Find("Player/Weapon Camera");
 		MenuManager = GameObject.Find("GUI_Master/Canvas/MainMenu");
 		ScrollTextControl = GameObject.Find("GUI_Master/Canvas/ScrollTextControl");
+		BackgroundImage = GameObject.Find("GUI_Master/SF Scene Elements/Background");
 		MainMenuAnim = MenuManager.GetComponent.<Animator>();
 		
 
@@ -88,15 +90,18 @@ function Update(){
 	if (Input.GetMouseButton(0) && Screen.lockCursor == false){
 		SetPause(false);
 	}
-		
-	if (InputDB.GetButton("Escape") && (PlayerWeapons.playerActive)){
+
+	if (InputDB.GetButton("Menu") )
+	{ 
 		ActivateGUI();
 		SetPause(true);
 	}
 
-//	if (InputDB.GetButton("Escape")){
-//		SetPause(true);
-//	}
+
+	if (InputDB.GetButton("Escape")){
+		SetPause(true);
+		Screen.lockCursor=false;
+	}
 
     // Did we lose cursor locking?
     // eg. because the user pressed escape
@@ -123,6 +128,7 @@ function ActivateGUI()
 {
 	Screen.lockCursor=false;
 	GUImaster.SetActive(true);
+	BackgroundImage.GetComponent.<SpriteRenderer>().color = Color.white;
 	WeaponCamera.SetActive(false);
 	MainMenuAnim.SetBool("Open",true);
 

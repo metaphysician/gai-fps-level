@@ -29,6 +29,10 @@ function select(a : boolean){
 	isEquipped = a;
 }
 
+function equipDead(){
+weapon = GameObject.Find("Player/Weapon Camera/GunMotion/Avoider/MAS-36");
+}
+
 
 //Apply any additional effects to the gunscript
 function Apply (g : GunScript) {
