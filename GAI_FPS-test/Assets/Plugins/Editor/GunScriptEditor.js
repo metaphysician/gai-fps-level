@@ -382,6 +382,10 @@ var gunTipo = gunTypes.hitscan;
 					}
 				}
 				EditorGUILayout.Separator();
+				target.gunScriptSource = EditorGUILayout.ObjectField(GUIContent(" Weapon Source ", "The object that plays Weapon audio sound clips"), target.gunScriptSource, AudioSource, true);
+				EditorGUILayout.Separator();
+				EditorGUILayout.LabelField(GUIContent("   Sound Volume", "Volume of Fire Sound"));
+				target.fireVolume = EditorGUILayout.Slider(target.fireVolume,0, 1);//EditorGUILayout.FloatField(GUIContent("  Sound Volume: ","The colume to play the sound clip at. A value of 1 will play the sound at max volume"), target.fireVolume);
 				target.fireSound = EditorGUILayout.ObjectField(GUIContent("  Fire Sound: ", "The sound to play when each shot is fired"), target.fireSound, AudioClip, false);
 				if(gunTipo == gunTypes.spray){
 					target.loopSound = EditorGUILayout.ObjectField(GUIContent( "  Looping Fire Sound: ", "The sound to loop while the weapon is firing"), target.loopSound, AudioClip, false);
@@ -394,8 +398,7 @@ var gunTipo = gunTypes.hitscan;
 				}
 				EditorGUILayout.LabelField(GUIContent("  Sound Pitch: ","The pitch to play the sound clip at. A value of 1 will play the sound at its natural pitch"));
 				target.firePitch = EditorGUILayout.Slider(target.firePitch,-3, 3);
-				EditorGUILayout.LabelField(GUIContent("   Sound Volume", "Volume of Fire Sound"));
-				target.fireVolume = EditorGUILayout.Slider(target.fireVolume,0, 1);//EditorGUILayout.FloatField(GUIContent("  Sound Volume: ","The colume to play the sound clip at. A value of 1 will play the sound at max volume"), target.fireVolume);
+				
 				EditorGUILayout.Separator();
 				
 				if(gunTipo != gunTypes.melee){
