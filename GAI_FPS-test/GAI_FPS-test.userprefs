@@ -1,10 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ApplicationManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js">
     <Files>
       <File FileName="Assets/Scripts/ApplicationManager.cs" Line="142" Column="20" />
       <File FileName="Assets/Scripts/O2_Alarm.cs" Line="1" Column="1" />
       <File FileName="Assets/AI/TempAI from old FPS/Scripts/AIAnimation.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/GunScript.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Editor/GunScriptEditor.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/ReloadSounds.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/MuzzleFlash.js" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js" Line="94" Column="3" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js" Line="35" Column="1" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Editable/DeadBotEquip.js" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
