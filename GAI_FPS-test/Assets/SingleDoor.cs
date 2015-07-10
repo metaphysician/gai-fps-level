@@ -6,6 +6,11 @@ public class SingleDoor : MonoBehaviour {
 	public float Size;
 	public float Speed;
 	public GameObject Door;
+	public AudioClip OpenSound;
+	public AudioClip CloseSound;
+	public AudioSource doorSource;
+	public bool isAmbienceChanger=false;
+	public string areaTag;
 
 	void Start () {
 		baseZ = Door.transform.localPosition.z;
@@ -14,11 +19,20 @@ public class SingleDoor : MonoBehaviour {
 	void OnTriggerEnter(){
 		StopAllCoroutines ();
 		StartCoroutine (Open ());
+		doorSource.clip = OpenSound;
+		doorSource.Play();
 	}
 	
-	void OnTriggerExit(){
+	void OnTriggerExit(Collider other){
 		StopAllCoroutines ();
 		StartCoroutine (Close ());
+		doorSource.clip = CloseSound;
+		doorSource.Play();
+		
+		// if Player is closing the doors and Ambience should change, send message
+		// this might be too late and needs OnTriggerEnter?
+		if (isAmbienceChanger && other.gameObject.CompareTag ("Player"))
+			Broadcast("ChangeAmbience",areaTag);
 	}
 	
 	private IEnumerator Open(){
