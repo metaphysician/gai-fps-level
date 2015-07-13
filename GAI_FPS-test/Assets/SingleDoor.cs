@@ -31,8 +31,8 @@ public class SingleDoor : MonoBehaviour {
 		
 		// if Player is closing the doors and Ambience should change, send message
 		// this might be too late and needs OnTriggerEnter?
-		if (isAmbienceChanger && other.gameObject.CompareTag ("Player"))
-			Broadcast("ChangeAmbience",areaTag);
+//		if (isAmbienceChanger && other.gameObject.CompareTag ("Player"))
+			//Broadcast("ChangeAmbience",areaTag);
 	}
 	
 	private IEnumerator Open(){
