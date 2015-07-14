@@ -19,6 +19,8 @@ GAI_FPS-test/*.sln
 GAI_FPS-test/*.user
 GAI_FPS-test/*.unityproj
 GAI_FPS-test/*.booproj
+morphtest
+morphtest/*.*
 
 # ============ #
 # OS generated #
