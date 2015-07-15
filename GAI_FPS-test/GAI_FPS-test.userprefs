@@ -1,20 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SingleDoor.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ApplicationManager.cs">
     <Files>
-      <File FileName="Assets/SingleDoor.cs" Line="34" Column="3" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ApplicationManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/O2_Alarm.cs" Line="1" Column="1" />
-      <File FileName="Assets/AI/TempAI from old FPS/Scripts/AIAnimation.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/GunScript.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/Editor/GunScriptEditor.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/ReloadSounds.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/MuzzleFlash.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/WeaponScripts/SelectableWeapon.js" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Editable/DeadBotEquip.js" Line="1" Column="1" />
-      <File FileName="../../NewFPS_Project copy/Assets/!Realistic FPS Prefab Files/Scripts/Player/Footsteps.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Footsteps.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ApplicationManager.cs" Line="20" Column="3" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Core/LockCursor.js" Line="128" Column="19" />
+      <File FileName="Assets/Plugins/FPS Constructor V1/ScriptsDB/Input/InputDB.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

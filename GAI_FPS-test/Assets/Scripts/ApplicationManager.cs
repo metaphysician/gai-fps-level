@@ -15,6 +15,9 @@ public class ApplicationManager : MonoBehaviour {
 	public GameObject oxygenAlarm;
 	public GameObject headBang;
 	public GameObject headBangObject;
+	public GameObject PlayerObject;
+	public GameObject Enemies;
+	public GameObject Manager;
 	public Color white;
 	public Color faded;
 	public float fadeTime;
@@ -28,6 +31,7 @@ public class ApplicationManager : MonoBehaviour {
 	public Transform mainCam;
 	Vector3 currCamPos;
 	public Transform endCam;
+	public Animation animCtrl;
 
 
 	void Start()
@@ -35,6 +39,13 @@ public class ApplicationManager : MonoBehaviour {
 	//set up Continue Button as disabled
 		ContBtn.interactable=false;
 		Scrolltext.SetBool("Open",false);
+		count = 0;
+		//animCtrl = headBang.GetComponent<Animation>();
+		animCtrl.Rewind("standup");
+		animCtrl.Play("standup");
+		animCtrl.Sample();
+		animCtrl.Stop("standup");
+		
 	// set up Animation on headBanger character
 			
 	}
@@ -84,11 +95,11 @@ public class ApplicationManager : MonoBehaviour {
 			break;
 			case 3:
 				if (NewBtn1x){
-				Application.LoadLevelAdditive("Graybox-testAI-legacy");
+				PlayerObject.SetActive(true);
+				Enemies.SetActive (true);
+				ContBtn.interactable=true;
 				StartCoroutine("delayedUI_sceneLoad");
-				ContBtn.interactable=true;	
-		}
-				
+				}
 			break;
 		}
 	}
@@ -97,7 +108,8 @@ public class ApplicationManager : MonoBehaviour {
 	public void StartGame()
 	{
 		if (NewBtn1x){
-			Application.LoadLevelAdditive("Graybox-testAI-legacy");
+			PlayerObject.SetActive(true);
+			Enemies.SetActive (true);
 			StartCoroutine("delayedUI_sceneLoad");
 			ContBtn.interactable=true;	
 		}
@@ -134,6 +146,8 @@ public class ApplicationManager : MonoBehaviour {
 			fadeBang = Mathf.SmoothDamp(fadeBang, 0.0f, ref reference, fadeTime);
 			headBangObject.SendMessage("bangDistCtrl", fadeBang);
 			Debug.Log ("HeadBang is now:" + (fadeBang));
+			if (fadeBang <= 0)
+				headbangStop=false;
 		}
 			else{ headbangStop = false;}
 
@@ -149,13 +163,14 @@ public class ApplicationManager : MonoBehaviour {
 
 	IEnumerator delayedUI_sceneLoad()
 	{
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(.25f);
 			GUImaster.SetActive(false);
+			Manager.BroadcastMessage("SetGameOn");
 	}
 
 	IEnumerator delayedHeadBangReduce()
 	{
-		Animation animCtrl = headBang.GetComponent<Animation>();
+		
 		headbangStop =true;
 		yield return new WaitForSeconds(5);
 		animCtrl.Play("standup");
